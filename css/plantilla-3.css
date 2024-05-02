@@ -40,38 +40,15 @@ body{
 }
 .contenedorH, .contenedorF, .contenedorE, .contenedorE div{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;    
 }
-
-/* Contenedor Header */
-.contenedorH{
-    margin-bottom: 50px;
-}
-
-/* Contenedor Footer */
-.contenedorF{
-    margin-top: 50px;
-    height: 200px;
-}
-
-/* Bloque Elementos */
-.contenedorE{
-    margin: 25px auto;
-}
 .contenedorE div{
-    height: 300px;
     background-color: darkgray;
-    margin: 25px;
     padding: 25px;
 }
-
-/* Adaptador de pantalla */
-@media screen and (width<=768px){
-    [class*="col-"]{
-        width: 100%;
-    }
-    .contenedorE{
-        flex-direction: column;
-    }
+.bloqueE{
+    align-items: center;
+    justify-content: center; 
 }
+
