@@ -1,0 +1,236 @@
+/* Los comentarios los debemos hacer con /* */
+/* 
+Existen 3 maneras de aplicar un esstilo
+1. En la línea
+2. en <head> de la pagina html
+3. En un archivo externo.......(De tu proyecto o de otra fuente)
+
+**Estructura**
+p -> etiqueta (selector)
+{
+    propiedad:valor
+    propiedad:valor
+    propiedad:valor
+    propiedad:valor
+}
+
+**Tipos de selectores**
+1. p, h1, div...
+2 # para id
+3. . para clases
+*/
+*{ /* Primera regla que se pone */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contenedor{
+    width: 100;
+    background-color: #d2d2d2;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.letraGrande{
+    font-size: 48px;
+}
+.letraAzul{
+    color: darkblue;
+}
+
+/* Se puede especificar que una clase se aplique a elementos específicos de HTML */
+.centrado{
+    text-align: center; /*Centrado tipo línea*/
+    margin: auto; /*Centrado tipo bloque*/
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.izquierda{
+ text-align: right;
+}
+
+.derecha{
+ text-align: left;
+}
+
+li{
+    font-size: 48px;
+}
+
+/*  ¡IMPORTANTE! Agrupación de reglas  */
+/* Tiene el objetivo de minimizar el código */
+h1,p,li{
+    font-size: 48px;
+}
+
+/* Los estilos aplicados en línea tienen prioridad a los internos y externos */
+/* Colores */
+/* fuentes: color */
+/* fondo: background-color */
+
+/* Bordes: Se le pueden aplicar a todas las etiquetas html p, div, imagen, etc */
+/* border: width | style | color  */
+/* 
+border-width: 3px;
+border-style: dotted;
+border-color: blue
+border: 3px dotted blue
+*/
+/* border-style: solid, dotted, dashed, double, grove, none, hidden. */
+/* 
+.div_Bordes{
+    border: 2px solid black;
+    border: 6px dashed palevioletred;
+} 
+*/
+.div_Bordes{
+    border-left: 6px solid #d2d2d2;
+    width: 40%;
+    padding: 25px 30px 10px 40px;
+    margin: auto;
+}
+.div_Bordes p {
+    padding-top: 25px 0;
+}
+
+/*     Botón     */
+.boton{
+    position:fixed;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: gray;
+    border:  1px solid #d2d2d2;
+    /* Bordes Redondeados */
+    border-radius: 0 15px 0 15px;
+}
+.div_Redondo{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #d2d2d2  ;
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* `Para centrar verticalmente */
+}
+.div_Redondo a{
+    text-decoration: none;
+    margin-top: 2px;
+    color: #d2d2d2;
+    font-size: 10px;
+}
+
+/*    Formulario     */
+.inputText{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.espacioTB{
+    padding: 25px 0;
+}
+
+/* Fondos-> background (color - img) */
+/*
+propiedades
+    repeat-> Si el fondo es pequeño, re repite en todo su contenedor
+*/
+.imagenR{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/pienso-cachorro.jpg);
+    background-repeat: repeat-y;
+    background-size: 5%;
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* `Para centrar verticalmente */
+    /* Propiedad attachment-> Especifica si la imagen se queda fija o se desplaza con el scroll. */
+    background-attachment: fixed; /* No se mueve, se queda en el sitio */
+    background-position: right top;
+}
+
+
+.titulo{
+    font-size: 40px;
+    color: #d2d2d2;
+}
+
+body{
+    background-image: url(../img/pienso-cachorro.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: 5%;
+    /* 
+   - Podemos simplificar lo anterior de esta manera:
+        {background: color imagen repeat attachmetn position} 
+   - En este orden.
+   - Ejemplo -> 
+    background: url(../img/pienso-cachorro.jpg) no-repeat fixed right bottom; 
+    */
+}
+
+/* Margenes en CSS */
+.divMP, .divMP p{
+    width: 50%;
+    margin: 25px;
+    padding: 25px;
+}
+.divMP p{
+    border: 1px solid blue;
+}
+
+.margen_Centrado{
+    margin-top: -150px;
+}
+.margen img{
+    opacity: 0.5;
+}
+
+/* Tanto en margin como en padding pueden existir tres valores ->
+    - padding: 25px 50px 70px 
+        25px relleno superior
+        50px relleno izquierda y derecha
+        70px relleno inferior
+    */
+
+.img_Max{
+    max-width: 50%;
+}
+
+
+/* CSS Columnas */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+[class*=col-]{ /*Todas las clases que comiencen por col- se le aplicara esta regla*/
+    display: flex;
+}
+.imgH{
+    opacity: 0.5;
+}
+/* Hover -> Para que se muestre la imagen cuando pase el cursos por encima. */
+.imgH:hover{
+    opacity: 1;
+    width: 33%;
+}
