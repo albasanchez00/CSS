@@ -223,14 +223,12 @@ body{
 .col-10{width: 83.33%;}
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
-[class*=col-]{ /*Todas las clases que comiencen por col- se le aplicara esta regla*/
-    display: flex;
-}
+
 .imgH{
     opacity: 0.5;
 }
 /* Hover -> Para que se muestre la imagen cuando pase el cursos por encima. */
 .imgH:hover{
-    opacity: 1;
-    width: 33%;
+    opacity: 1; /*Entre 0 hasta 1*/
+    width: 33.33%;
 }
