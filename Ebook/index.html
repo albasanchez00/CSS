@@ -18,13 +18,13 @@
 <body>
     <header class="header col-12">
         <section class="contenedor">
-            <div class="espacio-x-70 espacio-y col-9 row-centrado">
+            <div class="espacio-x-70 espacio-y col-11 row-centrado logo">
                 <img src="img/logo-light.png" alt="logo">
             </div>
-            <div class="row row-centrado col-10">
-                <div class="ebook col-4">
+            <div class="row row-centrado col-10 div-PicTex ajuste">
+                <picture class="ebook col-4">
                     <img src="img/book.png" alt="e-book">
-                </div>
+                </picture>
                 <div class="col-6 espacio-xy">
                     <h1>Muestre y Venda su libro electrónico de forma sencilla.</h1>
                     <p class="texto-1">Esto debe usarse para contar una historia y permitir que sus usuarios sepas un
@@ -34,7 +34,7 @@
             </div>
         </section>
     </header>
-    <section>
+    <section class="bloques">
         <div class="col-3 row-centrado espacio-y">
             <h2 class="h2-Negro texto-centrado">Vender tu E-book</h2>
             <p class="texto-2 texto-centrado">Mostramos solo los mejores sitios web, portafolios y páginas de
@@ -75,42 +75,60 @@
             </div>
         </div>
     </section>
-    <section>
-        <div>
-            <div class="linea-separadora">
-                <hr class="feature-divider">
-            </div>
+
+    <section class="linea-separadora">
+        <div class="bloques">
+            <hr>
         </div>
     </section>
-    <section class="bloque-tablet">
-        <div class="contenedor-tablet">
-            <div class="row">
-                <div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                    </div>
-                    <div>
-                        <div><span class="material-symbols-outlined">book_2</span></div>
-                        <div>
-                            <h3></h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis odit
-                                assumenda quasi culpa, omnis nulla unde porro dolorum quaerat sunt magnam minima a non
-                                odio praesentium, voluptatem facilis alias!</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div><span class="material-symbols-outlined">star</span></div>
-                        <div>
-                            <h3></h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis odit
-                                assumenda quasi culpa, omnis nulla unde porro dolorum quaerat sunt magnam minima a non
-                                odio praesentium, voluptatem facilis alias!</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div></div>
+    <section class="bloque-tablet bloques">
+        <div>
+            <div>
+                <h2>Capítulos incluidos</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+            </div>
+            <div class="ct-1">
+                <div><span class="material-symbols-outlined">book_2</span></div>
+                <div>
+                    <h3>10 capítulos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis odit
+                        assumenda quasi culpa, omnis nulla unde porro dolorum quaerat sunt magnam minima a non
+                        odio praesentium, voluptatem facilis alias!</p>
+                </div>
+            </div>
+            <div class="ct-1">
+                <div><span class="material-symbols-outlined">star</span></div>
+                <div>
+                    <h3>Buenas lecturas</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis odit
+                        assumenda quasi culpa, omnis nulla unde porro dolorum quaerat sunt magnam minima a non
+                        odio praesentium, voluptatem facilis alias!</p>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <img class="ct-1" src="img/ipad.jpg" alt="i-pad">
+        </picture>
+    </section>
+
+    <section class="bloque-Autor">
+        <div class="contenedor-Autor row row-centrado col-10">
+            <div class="bloque-Img col-5">
+                <picture>
+                    <img src="img/autor.jpg" alt="imagen-del-autor">
+                </picture>
+            </div>
+            <div class="col-5 ct-2">
+                <div>
+                    <h3 class="h3-Autor">Sobre el autor</h3>
+                    <p class="texto-Autor">Torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu
+                        felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin
+                        condimentum fermentum nunc, etiam pharetra, erat sed fermentum feugiat.</p>
+                </div>
+                <picture class="bloque-Img2">
+                    <img src="img/signture.png" alt="firma-autor">
+                </picture>
             </div>
         </div>
     </section>

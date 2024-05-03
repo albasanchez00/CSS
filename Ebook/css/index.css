@@ -4,11 +4,11 @@
 }
 
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: "Ubuntu", sans-serif;
     font-size: 13px;
-    font-weight: 820px;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -55,99 +55,151 @@ body {
 }
 
 /* Para ordenadores y móviles */
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 /* Para dispositivos móviles */
-@media screen and (width<=768px){
-    [class*="col-"]{
+@media screen and (width<=768px) {
+    [class*="col-"] {
         width: 100%;
     }
-    .row{
+
+    .row {
         flex-direction: column;
     }
 }
 
 /* Bloque Header */
-.row, .columnas{
+.row,
+.columnas {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.row-centrado{
+
+.row-centrado {
     margin: auto;
 }
-.header{
-    height: 820px;
+
+.header {
     background-color: #333;
     flex-direction: column;
 }
-.ebook{
+
+.ebook {
     margin-top: 100px;
     width: auto;
 }
-.espacio-xy{
+
+.espacio-xy {
     padding: 100px;
 }
-.espacio-x-70{
+
+.espacio-x-70 {
     padding-left: 70px;
 }
-.espacio-y{
+
+.espacio-y {
     padding-top: 100px;
 }
-.espacio-xy-25{
+
+.espacio-xy-25 {
     padding: 25px;
 }
+
 /* Contenedor 1 */
-h1{
+h1 {
     font-weight: normal;
     font-size: 48px !important;
     color: white;
 }
+
 /* Contenedor 2 */
-.h2-Negro{
+.h2-Negro {
     font-weight: normal;
     font-size: 36px;
     line-height: 1;
     text-transform: capitalize;
 }
-.h3-Negro{
+
+.h3-Negro {
     font-weight: normal;
     color: black;
 }
-.texto-2,.h3-Negro{
+
+.texto-2,
+.h3-Negro, .h3-Autor {
     font-size: 18px;
     line-height: 24px;
 }
 
-.texto-1{
+.texto-1 {
     font-size: 20px !important;
     opacity: .6;
     color: white;
 }
-.texto-2{
+
+.texto-2 {
     font-size: 18px !important;
     line-height: 24px;
     color: #aaa;
 }
-.texto-3{
+
+.texto-3, .texto-Autor {
     font-size: 14px;
 }
-.texto-centrado{
+
+.texto-centrado {
     text-align: center;
 }
-button{
+
+button {
     background-color: #49b970;
     color: white;
     border: none;
@@ -157,25 +209,98 @@ button{
     font-size: 14px;
     padding: 5px 15px;
 }
-button:hover{
+
+button:hover {
     background-color: #28a745;
 }
+
 /* Iconos */
-div .material-symbols-outlined{
+div .material-symbols-outlined {
     font-size: 70px;
     color: #49b970;
 }
-.columnas{
+
+.columnas {
     padding: 0 15px 0 15px;
     margin: 0;
-    width: 600px;
+    width: 300px;
 }
-.feature-divider {
+
+.linea-separadora hr {
     margin-top: 0;
     margin-bottom: 0;
-}
-.linea-separadora hr{
     border-top: 2px solid rgba(0, 0, 0, .1)
 }
+.linea-separadora{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
+.bloque-tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bloques{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1240px;
+}
 
+picture {
+    display: block;
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}
+
+/* Dentro de lo  de media solo se aplica a partir de 1024px */
+@media (min-width:1024px) {
+    .bloque-tablet {
+        flex-direction: row;
+    }
+}
+.logo img{
+    padding-left: 12px;
+}
+/* Se adapte la pantalla a partir de 1024 */
+@media (min-width:1024px) {
+    .contenedor{
+        height: 850px;
+    }
+}
+/* Para centrar los iconos con el div del texto */
+.ct-1, .contenedor-Autor{
+    display: flex;
+    align-items: center;
+}
+.ajuste{
+    overflow: hidden;
+}
+
+.bloque-Autor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 60px;
+}
+.contenedor-Autor{
+    width: 100%;
+    justify-content: space-between;
+}
+.bloque-Img{
+    width: auto;
+}
+.bloque-Img picture img{
+    height: 600px;
+}
+.bloque-Img2 img{
+    height: 50px;
+    width: 100px;
+}
+.ct-2{
+    padding: 0 40px;
+}
