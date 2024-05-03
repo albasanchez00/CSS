@@ -8,7 +8,7 @@ body {
     padding: 0%;
     font-family: "Ubuntu", sans-serif;
     font-size: 13px;
-    font-weight: 400px;
+    font-weight: 820px;
     line-height: 1.5;
 }
 
@@ -79,10 +79,8 @@ body {
 }
 
 /* Bloque Header */
-.row{
+.row, .columnas{
     flex-wrap: wrap;
-}
-.row{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,24 +89,63 @@ body {
     margin: auto;
 }
 .header{
-    height: 100vh;
+    height: 820px;
     background-color: #333;
     flex-direction: column;
 }
 .ebook{
-    margin-top: 500px;
+    margin-top: 100px;
+    width: auto;
 }
 .espacio-xy{
     padding: 100px;
 }
-.h1-Header{
+.espacio-x-70{
+    padding-left: 70px;
+}
+.espacio-y{
+    padding-top: 100px;
+}
+.espacio-xy-25{
+    padding: 25px;
+}
+/* Contenedor 1 */
+h1{
+    font-weight: normal;
     font-size: 48px !important;
     color: white;
 }
+/* Contenedor 2 */
+.h2-Negro{
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.h3-Negro{
+    font-weight: normal;
+    color: black;
+}
+.texto-2,.h3-Negro{
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .texto-1{
     font-size: 20px !important;
     opacity: .6;
     color: white;
+}
+.texto-2{
+    font-size: 18px !important;
+    line-height: 24px;
+    color: #aaa;
+}
+.texto-3{
+    font-size: 14px;
+}
+.texto-centrado{
+    text-align: center;
 }
 button{
     background-color: #49b970;
@@ -123,3 +160,22 @@ button{
 button:hover{
     background-color: #28a745;
 }
+/* Iconos */
+div .material-symbols-outlined{
+    font-size: 70px;
+    color: #49b970;
+}
+.columnas{
+    padding: 0 15px 0 15px;
+    margin: 0;
+    width: 600px;
+}
+.feature-divider {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.linea-separadora hr{
+    border-top: 2px solid rgba(0, 0, 0, .1)
+}
+
+
