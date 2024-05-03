@@ -1,3 +1,4 @@
+/* Pegar margenes de los bloques al ancho de la web */
 *{
     box-sizing: border-box;
 }
@@ -5,6 +6,7 @@ body{
     margin: 0%;
     padding: 0%;
 }
+
 /* CSS Columnas */
 .col-1{width: 8.33%;}
 .col-2{width: 16.66%;}
@@ -43,12 +45,11 @@ body{
     align-items: stretch;
     justify-content: center;    
 }
+
+/* BloqueE imagenes y texto */
 .contenedorE div{
     background-color: darkgray;
     padding: 25px;
 }
-.bloqueE{
-    align-items: center;
-    justify-content: center; 
-}
+
 
