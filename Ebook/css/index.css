@@ -1,6 +1,9 @@
 /* Pegar margenes de los bloques al ancho de la web */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 body {
@@ -311,7 +314,7 @@ picture img {
 
 .bloque-Testimonios{
     width: 100%;
-    padding-top: 60px;
+    padding: 100px;
 }
 
 
@@ -355,11 +358,135 @@ picture img {
     height: 75px;
 }
 
+/* Bloque de Precios */
+.bloque-Precios{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+    width: 100%;
+    padding: 100px;
+    background-color: #f9f9f9;
+} 
+.bloque-TextoP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+    width: 540px;
+    height: auto;
+    padding-bottom: 80px;
+}
 
+.bloque-TextoP h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.bloque-TextoP p{
+    font-size: 18px;
+}
+.bloque-Columnas{
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+.columnas2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    gap: 15px;
+}
 
+.contenido-Icono{
+    text-align: center;
+}
+.texto-Precio h3{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.contenido-Icono span{
+    font-size: 40px;
+    text-align: center;
+}
+.texto-Precio p{
+    font-size: 70px;
+    font-weight: bold;
+}
+.texto-Precio sup{
+    font-size: 25px;
+    padding-left: 10px;
+}
 
+.lista{
+    padding-bottom: 20px;
+}
+.lista p{
+    font-size: 16px;
+}
+.texto-5{
+    font-size: 16px;
+    color: #bbbbbb;
+}
+.contenido-Boton{
+    text-align: center;
+    margin: auto;
+}
+
+/* Bloque con fondo negro */
+.bloque-FondoN{
+    background-color: #333333;
+    width: 100%;
+    color: white;
+    margin-top: 60px;
+}
+
+.bloque-FondoN h3{
+    text-align: center; 
+    font-size: 40px;
+}
+.contenido-FondoN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 540px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.contenido-FondoN h3{
+    margin-bottom: 25px;
+}
+.contenido-FondoN p{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.texto-6{
+    font-size: 16px;
+    color: #bbbbbb;
+    font-weight: bold;
+}
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    font-style: none;
+}
+.footer p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+.footer a{
+    text-decoration: none;
+    color: #3a965a;
+}
+.material-symbols-outlined{
+    color: red;
 }
