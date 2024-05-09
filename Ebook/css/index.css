@@ -162,6 +162,7 @@ h1 {
 
 /* Contenedor 2 */
 .h2-Negro {
+    text-align: center;
     font-weight: normal;
     font-size: 36px;
     line-height: 1;
@@ -303,4 +304,62 @@ picture img {
 }
 .ct-2{
     padding: 0 40px;
+}
+
+
+
+
+.bloque-Testimonios{
+    width: 100%;
+    padding-top: 60px;
+}
+
+
+.contenedor-TituloT{}
+
+.contenedor-ContTes{
+    display: flex;
+    /* Gap -> Espacio entre hijos en flex */
+    /* Row-gap -> Dar espacio a las filas */
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* article en HTML */
+
+.contenedor-Reseña{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 540px;
+}
+
+.comillas img{
+    width: 83px;
+    height: auto;
+}
+
+.texto-4{
+    font-size: 14px;
+    color: #bbbbbb;
+    font-weight: bold;
+}
+
+.contenido-Texto{}
+
+.imagen-P{
+    width: 75px;
+    height: 75px;
+}
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
